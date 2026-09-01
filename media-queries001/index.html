@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoicismo na prática</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaqueries.css">
+</head>
+
+<body onresize="mudaTamanho">
+    <header>
+        <h1>Construindo uma autodisciplina </h1>
+        <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Estoicismo segundo Marcus Aurelius</h2><br>
+            <p>Os estóicos acreditavam firmemente que devemos investir a maior parte do nosso tempo e energia mental
+                exclusivamente naquilo que está ao nosso alcance para controlar ou influenciar diretamente. Como
+                refletiu Marco Aurélio: “Hoje escapei da ansiedade. Ou melhor, me livrei dela porque estava dentro de
+                mim, nas minhas percepções — e não fora de mim”. Ele sabia que era inútil desperdiçar esforços se
+                preocupando com fatores externos, como boatos, críticas mesquinhas, sorte inconstante ou assuntos
+                alheios sobre os quais não temos controle. Ao canalizar nossa energia apenas para ações significativas
+                que estejam alinhadas com nossos valores e objetivos, desenvolvemos a mentalidade e os hábitos
+                necessários para a autodisciplina.</p><br>
+
+            <p>Algumas áreas sobre as quais temos controle e que Marco Aurélio recomendaria que dominássemos incluem
+                nossos julgamentos, impulsos, desejos, opiniões e perspectivas. Habilidades como regulação emocional,
+                pensamento reflexivo, adaptabilidade e integridade também estão sob nossa influência. Podemos nos
+                comprometer com a prática disciplinada e a autocorreção nessas áreas todos os dias. E, quando surgirem
+                desafios, podemos seguir o exemplo de Marco Aurélio e nos perguntar: “O que aconteceu impediu você de
+                agir com justiça, generosidade, autocontrole, sensatez, prudência, honestidade, humildade, franqueza e
+                todas as outras qualidades que permitem que a natureza de uma pessoa se realize?” Se não, então devemos
+                seguir em frente, concentrando nossos esforços apenas naquilo sobre o qual temos controle.</p><br>
+
+            <p>Marco Aurélio também alertou sobre os perigos de emoções destrutivas, como raiva, amargura, ansiedade ou
+                tristeza, que podem dominar nossos centros de controle lógico se não forem controladas. Ele escreveu:
+                “As paixões paralisam. Somente a ação baseada no pensamento claro devolve o controle”. Como estoico e
+                assíduo escritor de diário, Marco Aurélio recomendava o uso de exercícios lógicos por escrito para
+                combater esses estados desgastantes. Por exemplo, se ele lutava contra a raiva ao se sentir ofendido,
+                sugeria fazer perguntas como: “Quão importante é isso? De que adiantaria continuar com raiva?”. Ele
+                incentivava a analisar o quadro geral de forma objetiva antes de reagir. Ou, se tomado pela ansiedade,
+                questionar cuidadosamente a suposição que causava o mal-estar e substituí-la por resultados mais
+                prováveis, com base em evidências passadas, pode restaurar a regulação emocional.</p>
+
+        </article>
+    </main>
+    <script>
+        function mudaTamanho() {
+            if(window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if(itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+
+</html>
